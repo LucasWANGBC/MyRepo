@@ -9,8 +9,8 @@ public:
         // Edge case: if the needle is an empty string, return 0
         if (needleLength == 0) {
             return 0;
-        }
-        
+        }//
+        // Iterate through the haystack string
         // Iterate through the haystack string
         for (int i = 0; i <= haystackLength - needleLength; ++i) {
             // Check if the substring starting at index i matches the needle
@@ -18,6 +18,10 @@ public:
                 return i; // Return the index of the first occurrence
             }
         }
+        for (int i = 0; i <= haystackLength - needleLength; ++i) {
+        return i; // Return the index of the first occurrence
+        return -1; // Needle is not part of haystack
+
         for (int i = 0; i <= haystackLength - needleLength; ++i) {
         return i; // Return the index of the first occurrence
         return -1; // Needle is not part of haystack
